@@ -115,7 +115,7 @@
 
   <insert id="Record.insertRecord" parameterType="TotalRecordVo">
     INSERT INTO record
-    (amount, regDate, update_date, memberId, categoryIdx, recordMemo, recordDetails, delYn)
+    (amount, regDate, updateDate, memberId, categoryIdx, recordMemo, recordDetails, delYn)
     VALUE
     (#{amount},#{regDate},now(), #{memberId}, #{categoryIdx}, #{recordMemo}, #{recordDetails}, false)
   </insert>
