@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: javax.servlet.jsp:jsp-api:2.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="javax.servlet.jsp" artifactId="jsp-api" version="2.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.2/5bf0c26ef77df58c7c28be2d9d52246f2b437a54/jsp-api-2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

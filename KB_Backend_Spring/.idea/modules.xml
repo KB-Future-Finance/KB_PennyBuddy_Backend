@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KB_Backend_Spring.iml" filepath="$PROJECT_DIR$/KB_Backend_Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.main.iml" filepath="$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.test.iml" filepath="$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.test.iml" />
     </modules>
   </component>
