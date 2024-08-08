@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Record">
+  <select id="Record.getList" parameterType="map" resultType="TotalRecordVo">
+    select
+    a.recordIdx as recordIdx,
+    a.amount as amount,
+    date_format(a.regDate, '%Y-%m-%d') as regDate,
+    a.memberId as memberId,
+    b.categoryType as categoryType,
+    b.categoryIdx as categoryIdx,
+    a.recordMemo as recordMemo,
+    a.recordDetails as recordDetails,
+    a.delYn as delYn,
+    b.categoryName as categoryName
+    from record a
+    left outer join category b
+    on a.categoryIdx = b.categoryIdx
+    where
+    a.delYn = false
+    and a.memberId = #{memberId}
+    <if test="categories != null and categories.size() > 0">
+      and a.categoryIdx in
+      <foreach item="category" index="index" collection="categories" open="(" separator="," close=")">
+        #{category}
+      </foreach>
+    </if>
+    <if test="categoryType != null">
+      and b.categoryType = #{categoryType}
+    </if>
+    <if test="startDate != null and endDate != null" >
+      <![CDATA[
+    and a.regDate >= #{startDate} and a.regDate <= #{endDate}
+    ]]>
+    </if>
+    order by regDate desc
+    limit #{offset}, #{pageSize}
+  </select>
+
+  <select id="Record.getTotalCount" parameterType="TotalRecordVo" resultType="int">
+    select count(*)
+    from record a
+    left outer join category b on a.categoryIdx = b.categoryIdx
+    where a.delYn = false
+    and a.memberId = #{memberId}
+    <if test="categories != null and categories.size() > 0">
+      and a.categoryIdx in
+      <foreach item="category" index="index" collection="categories" open="(" separator="," close=")">
+        #{category}
+      </foreach>
+    </if>
+    <if test="categoryType != null">
+      and b.categoryType = #{categoryType}
+    </if>
+    <if test="startDate != null and endDate != null">
+      <![CDATA[
+    and a.regDate >= #{startDate} and a.regDate <= #{endDate}
+    ]]>
+    </if>
+  </select>
+
+  <select id="Record.getCategory" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    select distinct a.categoryIdx categoryIdx,
+    b.categoryName categoryName,
+    b.categoryType categoryType
+    from record a
+    right outer join category b
+    on a.categoryIdx = b.categoryIdx
+    where
+    a.delYn = false
+    <if test="memberId != null">
+      and a.memberId = #{memberId}
+    </if>
+    <if test="startDate != null and endDate != null" >
+      <![CDATA[
+        and a.regDate >= #{startDate} and a.regDate <= #{endDate}
+      ]]>
+    </if>
+  </select>
+
+  <select id="Record.getTotalAmount" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    select sum(a.amount) amount,
+    b.categoryType as categoryType
+    from record a
+    left outer join category b
+    on a.categoryIdx = b.categoryIdx
+    where
+    a.delYn = false
+    and a.memberId = #{memberId}
+    <if test="categories != null and categories.size() > 0">
+      and a.categoryIdx in
+      <foreach item="category" index="index" collection="categories" open="(" separator="," close=")">
+        #{category}
+      </foreach>
+    </if>
+    <if test="categoryType != null">
+      and b.categoryType = #{categoryType}
+    </if>
+    <if test="startDate != null and endDate != null" >
+      <![CDATA[
+        and a.regDate >= #{startDate} and a.regDate <= #{endDate}
+      ]]>
+    </if>
+    group by categoryType
+  </select>
+
+  <update id ="Record.deleteRecord" parameterType="TotalRecordVo">
+    update record
+    set delYn = true
+    where memberId = #{memberId} and recordIdx = #{recordIdx}
+  </update>
+
+  <insert id="Record.insertRecord" parameterType="TotalRecordVo">
+    INSERT INTO record
+    (amount, regDate, update_date, memberId, categoryIdx, recordMemo, recordDetails, delYn)
+    VALUE
+    (#{amount},#{regDate},now(), #{memberId}, #{categoryIdx}, #{recordMemo}, #{recordDetails}, false)
+  </insert>
+
+  <select id = "Record.getYear" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    select distinct year(regDate) as year
+    from record
+    where memberId = #{memberId}
+    order by year desc
+  </select>
+
+  <select id = "Record.getChartMonth" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    SELECT
+      date_format(regDate, '%m') as months,
+      SUM(amount) AS amount
+    FROM
+      record
+    WHERE
+      delyn = false
+      AND memberId = #{memberId}
+      AND YEAR(regDate) = #{year}
+    GROUP BY
+      months
+    ORDER BY
+      months
+  </select>
+
+  <select id = "Record.getChartName" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    select
+      sub1.categoryName as categoryName,
+      sub1.total as amount
+    from
+    ( select
+        sum(a.amount) as total,
+        b.categoryName as categoryName,
+        b.categoryIdx as categoryIdx,
+        rank() over ( order by sum(a.amount) desc ) as ranking
+      from record a
+        inner join category b
+        on a.categoryIdx = b.categoryIdx
+      where
+        delYn = false
+        and a.memberId = #{memberId}
+        and b.categoryType = 2
+        and YEAR(a.regDate) = #{year}
+       group by a.categoryIdx
+      )sub1
+        <![CDATA[
+        where sub1.ranking<=5
+        ]]>
+    </select>
+
+  <select id = "Record.getResultAmount" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    SELECT
+      (SELECT sum(a.amount)
+       FROM record a
+        LEFT OUTER JOIN category b
+        ON a.categoryIdx = b.categoryIdx
+       WHERE
+           a.delYn = false AND a.memberId = #{memberId} AND b.categoryType = 1
+       ) -
+      (SELECT sum(a.amount)
+       FROM record a
+        LEFT OUTER JOIN category b
+        ON a.categoryIdx = b.categoryIdx
+       WHERE a.delYn = false AND a.memberId = #{memberId} AND b.categoryType = 2
+       ) AS amount
+  </select>
+
+  <select id="Record.getDetail" parameterType="TotalRecordVo" resultType="TotalRecordVo">
+    select
+      a.recordIdx as recordIdx,
+      a.amount as amount,
+      date_format(a.regDate, '%Y-%m-%d') as regDate,
+      a.memberId as memberId,
+      b.categoryType as categoryType,
+      b.categoryIdx as categoryIdx,
+      a.recordMemo as recordMemo,
+      a.recordDetails as recordDetails,
+      a.delYn as delYn,
+      b.categoryName as categoryName
+    from record a
+    left outer join category b
+    on a.categoryIdx = b.categoryIdx
+    where
+      a.delYn = false
+      and a.memberId = #{memberId}
+      and a.recordIdx = #{recordIdx}
+  </select>
+
+  <update id ="Record.updateRecord" parameterType="TotalRecordVo">
+    update record
+    set amount         = #{amount},
+        regDate       = #{regDate},
+        categoryIdx    = #{categoryIdx},
+        recordMemo    = #{recordMemo},
+        recordDetails = #{recordDetails}
+    where recordIdx = #{recordIdx} and memberId = #{memberId}
+  </update>
+
+
+
+</mapper>
