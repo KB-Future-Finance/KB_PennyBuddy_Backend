@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ec8138e-ded9-4c4b-998b-c28f0d188dea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___KB_Backend_Spring_1_0_SNAPSHOT_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___com_example___KB_Backend_Spring_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asm_asm_3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_protobuf_protobuf_java_3_19_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_mysql_mysql_connector_j_8_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_jsp_jsp_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_jsp_jstl_jstl_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_dbcp2_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_commons_pool2_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_log4j12_1_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/KB_Backend_Spring.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KB_Backend_Spring.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/controller/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/service/CategoryDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/service/CategoryDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/service/CategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/category/service/CategoryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/home/StartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/kb_backend_spring/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/controller/MemberController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/service/MemberDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/service/MemberDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/service/MemberServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/member/service/MemberVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/controller/RecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/RecordDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/RecordDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/RecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/RecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/RecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/record/service/TotalRecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/kb/util/SqlSessionFactoryBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/KB_Backend_Spring-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/controller/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/service/CategoryDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/service/CategoryDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/service/CategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/category/service/CategoryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/home/StartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/kb_backend_spring/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/controller/MemberController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/service/MemberDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/service/MemberDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/service/MemberServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/member/service/MemberVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/controller/RecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/RecordDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/RecordDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/RecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/RecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/RecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/record/service/TotalRecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/com/kb/util/SqlSessionFactoryBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/sqlmap/mappings/Category-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/sqlmap/mappings/Member-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/sqlmap/mappings/Record-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/classes/sqlmap/sql-mapper-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/asm-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/cglib-2.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/commons-dbcp2-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/commons-pool2-2.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/jackson-annotations-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/jackson-core-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/jackson-databind-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/jcl-over-slf4j-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/json-20220924.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-j-8.0.31.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/mysql-connector-j-9.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/servlet-api-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-api-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/slf4j-log4j12-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/spring/context-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/spring/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/views/record/record.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/views/start.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/KB_Backend_Spring-1.0-SNAPSHOT.war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/controller/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/service/CategoryDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/service/CategoryDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/service/CategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/category/service/CategoryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/config/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/home/StartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/kb_backend_spring/HelloServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/controller/MemberController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/service/MemberDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/service/MemberDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/service/MemberServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/member/service/MemberVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/controller/RecordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/RecordDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/RecordDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/RecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/RecordServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/RecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/record/service/TotalRecordVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/com/kb/util/SqlSessionFactoryBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/sqlmap/mappings/Category-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/sqlmap/mappings/Member-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/sqlmap/mappings/Record-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/classes/sqlmap/sql-mapper-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/asm-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/cglib-2.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/commons-dbcp2-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/commons-pool2-2.10.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/jackson-annotations-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/jackson-core-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/jackson-databind-2.12.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/jcl-over-slf4j-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/json-20220924.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/jstl-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/mysql-connector-j-8.0.31.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/mysql-connector-j-9.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/protobuf-java-3.19.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/servlet-api-2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/slf4j-api-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/slf4j-log4j12-1.6.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-web-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/lib/spring-webmvc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/spring/context-datasource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/spring/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/views/record/record.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/views/start.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/exploded/tempspring2.war/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/tempspring2.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/sqlmap/mappings/Category-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/sqlmap/mappings/Member-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/sqlmap/mappings/Record-mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/sqlmap/sql-mapper-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2kMe6xMKDZyjJAD7rWandqFcWVT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build KB_Backend_Spring.executor": "Run",
+    "Gradle.KB_Backend_Spring [build].executor": "Run",
+    "Gradle.KB_Backend_Spring [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 8.5.81.executor": "Run",
+    "git-widget-placeholder": "Merging backend/kjd",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sshon/Desktop/KB_Backend/KB_PennyBuddy_Backend/KB_Backend_Spring/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.12298851",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sshon\Desktop\KB_Backend\KB_PennyBuddy_Backend\KB_Backend_Spring\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.81" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.81" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.example : KB_Backend_Spring-1.0-SNAPSHOT.war (exploded)">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+        <artifact name="Gradle : com.example : KB_Backend_Spring-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___com_example___KB_Backend_Spring_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="da135f08-6ee4-4465-959e-b165ad54ad3b" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53153" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : KB_Backend_Spring-1.0-SNAPSHOT.war" />
+          <artifact name="Gradle : com.example : KB_Backend_Spring-1.0-SNAPSHOT.war (exploded)" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ec8138e-ded9-4c4b-998b-c28f0d188dea" name="Changes" comment="" />
+      <created>1723097709702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723097709702</updated>
+      <workItem from="1723097710873" duration="3241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+</project>
