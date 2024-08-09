@@ -41,51 +41,71 @@ Penny Buddy 프로젝트의 BackEnd 부분에서는 두가지 기능이 포함�
 4. Spring 애플리케이션을 실행합니다.
 
 ## ERD 다이어그램
-![image](https://github.com/user-attachments/assets/9fa74a82-e0e9-491c-a47e-4f923a58b260)
+![DB_ERD(5)](https://github.com/user-attachments/assets/5fa3286e-2727-408b-8bc2-0351652561d7)
 
 ### 설명
 ## 데이터베이스 테이블 설명
 
-이 프로젝트에서는 4개의 주요 테이블(`avatar`, `member`, `category`, `record`)의 관계와 그 속성을 아래에 설명합니다.
+이 프로젝트에서는 6개의 주요 테이블(`Characters`,`Items`,`Avatar`, `Member`, `Category`, `Record`)의 관계와 그 속성을 아래에 설명합니다.
 
-### 1. `avatar` 테이블
 
-- **avatar_id** (INT, PRIMARY KEY): 아바타의 고유 식별자.
-- **avatar_url** (VARCHAR(255)): 아바타 이미지의 URL.
+### 1. `Characters` 테이블
 
-### 2. `member` 테이블
+- **characterIdx** (INT, PRIMARY KEY): 캐릭터의 고유 식별자.
+- **characterName** (VARCHAR(30)): 캐릭터 명
+- **avatar_url** (VARCHAR(255)): 캐릭터 이미지의 URL.
 
-- **member_id** (INT, PRIMARY KEY): 회원의 고유 식별자.
-- **username** (VARCHAR(30)): 회원의 사용자 이름.
+
+### 2. `Items` 테이블
+
+- **itemIdx** (INT, PRIMARY KEY): 아이템의 고유 식별자.
+- **itemName** (VARCHAR(30)): 아이템 명 
+- **itemType** (VARCHAR(30)): 아이템의 종류(머리, 몸 착용부위 구분).
+- **itemColor** (VARCHAR(30)): 아이템의 색상.
+- **itemUrl** (VARCHAR(255)): 아바타 이미지의 URL.
+
+
+### 3. `Avatar` 테이블
+
+- **avatarIdx** (INT, PRIMARY KEY): 아바타의 고유 식별자.
+- **characterIdx** (INT, FOREIGN KEY): 캐릭터 테이블과의 외래키 관계
+- **itemIdx** (INT, FOREIGN KEY): 아이템 테이블과의 외래키 관계
+
+
+### 4. `Member` 테이블
+
+- **userIdx** (INT, PRIMARY KEY): 회원의 고유 식별자.
+- **memberId** (VARCHAR(30)): 회원의 사용자 아이디.
 - **userPw** (VARCHAR(255)): 회원의 비밀번호.
 - **userPn** (VARCHAR(15)): 회원의 전화번호.
 - **userMail** (VARCHAR(255)): 회원의 이메일 주소.
-- **avatar_id** (INT, FOREIGN KEY): 아바타 테이블과의 외래키 관계.
+- **avatarIdx** (INT, FOREIGN KEY): 아바타 테이블과의 외래키 관계.
 - **userDate** (DATETIME): 회원 가입 날짜.
-- **update_date** (DATETIME): 회원 정보가 마지막으로 업데이트된 날짜.
+- **updateDate** (DATETIME): 회원 정보가 마지막으로 업데이트된 날짜.
 - **delYn** (TINYINT(1)): 회원 삭제 여부.
 
-### 3. `category` 테이블
+### 5. `Category` 테이블
 
-- **category_id** (INT, PRIMARY KEY): 카테고리의 고유 식별자.
-- **category_name** (VARCHAR(50)): 카테고리 이름.
-- **category_type** (VARCHAR(10)): 카테고리 유형.
+- **categoryIdx** (INT, PRIMARY KEY): 카테고리의 고유 식별자.
+- **categoryName** (VARCHAR(50)): 카테고리 이름.
+- **categoryType** (VARCHAR(10)): 카테고리 유형.
 
-### 4. `record` 테이블
+### 6. `Record` 테이블
 
-- **record_id** (INT, PRIMARY KEY): 기록의 고유 식별자.
+- **recordIdx** (INT, PRIMARY KEY): 기록의 고유 식별자.
 - **amount** (DECIMAL(10, 2)): 금액.
-- **reg_date** (DATETIME): 기록 생성 날짜.
-- **update_date** (DATETIME): 기록이 마지막으로 업데이트된 날짜.
-- **member_id** (INT, FOREIGN KEY): 회원 테이블과의 외래키 관계.
-- **category_id** (INT, FOREIGN KEY): 카테고리 테이블과의 외래키 관계.
-- **category_type** (VARCHAR(10)): 카테고리 유형.
-- **record_memo** (TEXT): 기록에 대한 메모.
-- **record_details** (TEXT): 기록의 세부 사항.
+- **regDate** (DATETIME): 기록 생성 날짜.
+- **updateDate** (DATETIME): 기록이 마지막으로 업데이트된 날짜.
+- **memberId** (INT, FOREIGN KEY): 회원 테이블과의 외래키 관계.
+- **categoryIdx** (INT, FOREIGN KEY): 카테고리 테이블과의 외래키 관계.
+- **recordMemo** (TEXT): 기록에 대한 메모.
+- **recordDetails** (TEXT): 기록의 세부 사항.
 - **delYn** (TINYINT(1)): 기록 삭제 여부.
 
 ### 테이블 간의 관계
 
+- `Avatar` 테이블의 `characterIdx`는 `Characters` 테이블의 `characterIdx`를 참조하여 아바타와 캐릭터 간의 1:N 관계를 형성합니다.
+- `Avatar` 테이블의 `itemIdx`는 `Items` 테이블의 `itemIdx`를 참조하여 아바타와 아이템 간의 1:N 관계를 형성합니다.
 - `member` 테이블의 `avatar_id`는 `avatar` 테이블의 `avatar_id`를 참조하여 회원과 아바타 간의 1:1 관계를 형성합니다.
 - `record` 테이블의 `member_id`는 `member` 테이블의 `member_id`를 참조하여 회원과 기록 간의 1:N 관계를 형성합니다.
 - `record` 테이블의 `category_id`는 `category` 테이블의 `category_id`를 참조하여 카테고리와 기록 간의 1:N 관계를 형성합니다.
@@ -98,21 +118,21 @@ Penny Buddy 프로젝트의 BackEnd 부분에서는 두가지 기능이 포함�
 
 **🥄 커밋 규칙**
 
-`태그 : 제목` 의 형태이며, `:`뒤에만 space가 있음에 유의한다.
+`태그 : 제목` 의 형태이며, `:`뒤에만 space가 있음에 유의한다.
 
-- `feat` : 새로운 기능 추가
-- `fix` : 버그 수정
-- `docs` : 문서 수정
-- `style` : 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
-- `refactor` : 코드 리펙토링
-- `test` : 테스트 코드, 리펙토링 테스트 코드 추가
-- `chore` : 빌드 업무 수정, 패키지 매니저 수정
+- `feat` : 새로운 기능 추가
+- `fix` : 버그 수정
+- `docs` : 문서 수정
+- `style` : 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우
+- `refactor` : 코드 리펙토링
+- `test` : 테스트 코드, 리펙토링 테스트 코드 추가
+- `chore` : 빌드 업무 수정, 패키지 매니저 수정
 
 **🍴 PR 규칙**
 
 - PR 제목
     
-    예시 : `yymmdd {이름} {기능} 구현` (예시 : 240701 이준렬 css 구현)
+    예시 : `yymmdd {이름} {기능} 구현` (예시 : 240701 이준렬 css 구현)
     
 
 ### 데이터 생성
