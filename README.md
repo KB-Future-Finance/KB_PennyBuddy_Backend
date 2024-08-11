@@ -560,20 +560,23 @@ select * from record;
 
 
 ## API 명세서
+## API 명세서
 
-| API 종류  | API 명       | 파라미터                                      | 설명                           |
-|-----------|--------------|----------------------------------------------|--------------------------------|
-| Categroy  | .getList      |                                              | 전체 카테고리 내역 출력        |
-| Record    | .getList      | memberId, categoryType, startDate, endDate   | 조건 별 리스트 출력            |
-| Record    | .getTotalCount| memberId, categoryType, startDate, endDate   | 조건 별 총 수입 지출 출력      |
-| Record    | .deleteRecord | memberId, recordIdx                          | 해당 글 삭제                   |
-| Record    | .insertRecord |                                              | 글 작성                        |
-| Record    | .getYear      | memberId                                     | 아이디 별 년도 출력            |
-| Record    | .getChartMonth| memberId, year, categoryType                 | 조건 별 월 기준 데이터 출력    |
-| Record    | .getChartName | memberId, year, categoryType                 | 조건 별 카테고리 기준 데이터 출력 |
-| Record    | .getResultAmount| memberId, categoryType                     | 조건 별 총 수입,지출 출력      |
-| Record    | .getDetail    | memberId, recordIdx                          | 상세 내역 출력                 |
-| Record    | .updateRecord | memberId, recordIdx                          | 데이터 수정                    |
+| API 종류 | API 명                 | 파라미터                                      | 설명                           |
+|----------|------------------------|----------------------------------------------|--------------------------------|
+| Categroy | .getList                |                                              | 전체 카테고리 내역 출력        |
+
+| Record   | .getList                | memberId, categoryType, startDate, endDate   | 조건 별 리스트 출력            |
+|          | .getTotalCount          | memberId, categoryType, startDate, endDate   | 조건 별 총 수입 지출 출력      |
+|          | .deleteRecord           | memberId, recordIdx                          | 해당 글 삭제                   |
+|          | .insertRecord           |                                              | 글 작성                        |
+|          | .getYear                | memberId                                     | 아이디 별 년도 출력            |
+|          | .getChartMonth          | memberId, year, categoryType                 | 조건 별 월 기준 데이터 출력    |
+|          | .getChartName           | memberId, year, categoryType                 | 조건 별 카테고리 기준 데이터 출력 |
+|          | .getResultAmount        | memberId, categoryType                       | 조건 별 총 수입,지출 출력      |
+|          | .getDetail              | memberId, recordIdx                          | 상세 내역 출력                 |
+|          | .updateRecord           | memberId, recordIdx                          | 데이터 수정                    |
+
 
 
 
