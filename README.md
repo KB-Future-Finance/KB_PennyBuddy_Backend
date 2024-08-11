@@ -161,7 +161,7 @@ Penny Buddy 프로젝트의 BackEnd 부분에서는 두가지 기능이 포함�
 
 데이터베이스와 테이블을 생성하고 필요한 데이터를 삽입합니다. 자세한 SQL 쿼리는 아래와 같습니다:
 
-[Uploading 쿼리drop database testKb;
+```sql
 create database testKb;
 use testKb;
 -- Character 종류
@@ -556,9 +556,6 @@ INSERT INTO record (amount, regDate, updateDate, memberId, categoryIdx, recordMe
 -- 데이터 확인
 select * from record;
 
-
-
-
-문.sql…]()
+```
 
 
