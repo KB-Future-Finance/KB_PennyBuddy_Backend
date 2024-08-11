@@ -115,7 +115,7 @@
 
   <insert id="Record.insertRecord" parameterType="TotalRecordVo">
     INSERT INTO record
-    (amount, regDate, update_date, memberId, categoryIdx, recordMemo, recordDetails, delYn)
+    (amount, regDate, updateDate, memberId, categoryIdx, recordMemo, recordDetails, delYn)
     VALUE
     (#{amount},#{regDate},now(), #{memberId}, #{categoryIdx}, #{recordMemo}, #{recordDetails}, false)
   </insert>
@@ -129,18 +129,21 @@
 
   <select id = "Record.getChartMonth" parameterType="TotalRecordVo" resultType="TotalRecordVo">
     SELECT
-      date_format(regDate, '%m') as months,
-      SUM(amount) AS amount
-    FROM
-      record
+      date_format(a.regDate, '%m') as months,
+      SUM(a.amount) AS amount
+    from
+      record a
+        left outer join category b
+                        on a.categoryIdx = b.categoryIdx
     WHERE
-      delyn = false
-      AND memberId = #{memberId}
-      AND YEAR(regDate) = #{year}
+      a.delyn = false
+        AND a.memberId = #{memberId}
+        AND YEAR(a.regDate) = #{year}
+      AND b.categoryType ='2'
     GROUP BY
       months
     ORDER BY
-      months
+      months;
   </select>
 
   <select id = "Record.getChartName" parameterType="TotalRecordVo" resultType="TotalRecordVo">
