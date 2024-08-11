@@ -38,7 +38,29 @@ Penny Buddy 프로젝트의 BackEnd 부분에서는 두가지 기능이 포함�
     ```
     
 3. InteliJ에서 프로젝트를 열고, 필요한 의존성을 설치합니다.
-4. Spring 애플리케이션을 실행합니다.
+
+4. 개인 설정에 맞게, Tomcat, Gradle, JDK 버전을 수정합니다. (아래는 프로젝트의 버전입니다.)
+   1) Tomcat : 8.5.81
+   2) Gradle : 8.7
+   3) JDK : corretto11
+
+5. DB 주소 수정
+   1) database.properties 수정
+        경로 : src/main/webapp/WEB-INF/config/database.properties
+    	jdbc.url = jdbc:mysql://localhost:(사용자포트번호)/(mysql dabase명)
+    	jdbc.username = mysql_(사용자 Id, ex : root )
+    	jdbc.password = mysql_(사용자 pw)
+
+    2) context-datasource.xml 수정
+        경로 : src/main/webapp/WEB-INF/spring/context-datasource.xml
+
+       bean id = "dataSource" 안의 property들 수정. 
+       <property name="url" value="jdbc:mysql://(사용자포트번호)/(mysql dabase명)?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC" />
+       <property name="username"          value="(사용자 Id)"></property>
+       <property name="password"          value="(사용자 pw)"></property>
+
+
+6. Spring 애플리케이션을 실행합니다.
 
 ## ERD 다이어그램
 ![DB_ERD(5)](https://github.com/user-attachments/assets/5fa3286e-2727-408b-8bc2-0351652561d7)
